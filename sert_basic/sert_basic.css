@@ -1,0 +1,10 @@
+
+.col {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background-image: url(../sertif/basic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

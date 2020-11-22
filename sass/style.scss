@@ -1,0 +1,264 @@
+$font_white: #ffffff;
+$color_fon:  #264d8f;
+
+@mixin undrLine {
+    width: 100px;
+    margin: 0 auto 20px auto;
+    background-color: $color_fon;
+    border: 2px solid $color_fon;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.header{
+    .menu_block {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: hsl(0, 0%, 100%), $alpha: 0.9) ;
+        position: fixed;
+        z-index: 1;
+        display: none;
+        padding-top: 250px;
+        margin: 0 auto;
+        .list {
+            width: 300px;
+            margin: 0 auto;
+            padding-right: 0;
+            padding-left: 0;
+            .list_items {
+                text-align: center;
+                font-size: 30px;
+            }
+            .soc {
+                width: 200px;
+                margin: 0 auto;
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+
+    }
+    background-image: url(../img/study_programming.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    overflow: hidden;
+    .conteiner-fluid {
+        padding-top: 15%;
+        padding-left: 10%;
+        padding-bottom: 17%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        height: 100vh;
+        .menu {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 20px;
+            top: 10px;
+            border-radius: 50%;    
+            background-color: $color_fon;
+            display: flex;
+            z-index: 1;
+            cursor: pointer;
+            .burg {
+                display: inline-block;
+                font-size: 30px;   
+                color: $font_white;
+                margin: auto;
+                
+            }
+        }
+    }
+    .hello_block {
+        position: relative;
+        .hello {
+            color: $font_white;
+            margin-bottom: 2%;
+            padding: 0;
+            .name_color {
+                color: rgb(236, 130, 38);
+            }
+        }
+        .position {
+            color: $font_white;
+            margin: 0;
+        }
+        .arrow_down {
+            color: $font_white;
+            font-size: 70px;
+            position: absolute;
+            top: 250px;
+            left: 10px;
+        }
+    }
+}
+.main { 
+    .portfo_block {
+        padding-top: 50px;
+        width: 70%;
+        margin: 0 auto ;
+        .col {
+            margin-bottom: 50px;
+            .name {
+                width: 100%;  
+            }
+            .underline {
+                @include undrLine
+            }
+            .site_item {
+                cursor: pointer;
+                position: relative;
+                margin: 10px auto 0 auto;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background-image: url(../img/object-oriented-programming-in-python.png);
+                .site_name {
+                    background-color: $color_fon;
+                    width: 100%;
+                    height: 25%;
+                    position: absolute;
+                    top: 75%;
+                    color: $font_white;
+                    text-align: center;
+                    font-size: 24px;
+                }
+                .button {
+                    width: 60%;
+                    padding: 8px;
+                    background-color: $font_white;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 50px;
+                    left: -200px;
+                    transition: 0.5s;
+                    text-align: center;
+                    opacity: 0;
+                }
+                &:hover .button {
+                    left: 20%;
+                    transition: 0.5s;
+                    opacity:1;
+            }
+            }
+            &:nth-child(n+2) {
+                height: 200px;
+            }
+            &:nth-child(4) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .sertif_block {
+        width: 70%;
+        margin: 0 auto 20px auto;
+        justify-content: space-around;
+        .main_item {
+           .underline_sert {
+            @include undrLine
+           } 
+        }
+        .sert_basic {
+            background-image: url(../sertif/basic.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            margin-bottom: 20px;
+            height: 200px;
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 1.00s;
+
+        }
+        .sert_pro {
+            background-image: url(../sertif/pro.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 200px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 1.00s;
+         }
+         .sert_basic:hover, .sert_pro:hover {
+            transform: scale(1.2);
+            transition: 1.00s;
+        } 
+    }
+    .skill_block {
+        width: 70%;
+        margin: 0 auto 20px auto;
+        .main_item {
+            margin-bottom: 40px;
+            .underline_skill {
+                @include undrLine
+            }
+        }
+        .skill_item {
+            width: 250px;
+            height: 250px;
+            padding-top: 50px;
+            font-size: 18px;
+            .fab, .fas {
+                width: 100%;
+                text-align: center;
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+            &:nth-child(odd) {
+                background-color: $color_fon;
+                color: $font_white;
+            }
+        }
+    }
+}
+.footer {
+    background-color: $color_fon;
+    color: $font_white;
+    .foot_block {
+        width: 70%;
+        margin: 0 auto 0 auto;
+        padding-bottom: 40px;
+        .about {
+            padding-top: 40px;
+            text-align: center;
+        }
+        .contact {
+            padding-top: 40px;
+            text-align: center;
+            .mail {
+                background-color: $font_white;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                padding: 10px;
+                position: relative;
+                .far {
+                    color: $color_fon;
+                    position: absolute;
+                    left: 10px;
+                    top: 3px;
+                    font-size: 40px;
+                }
+            }
+            .footer_href {
+                .fab {
+                    margin-right: 20px;
+                    font-size: 40px;
+                    color: $font_white;
+                }
+            }
+            
+        }
+    }
+        
+   
+}
+
+
