@@ -3,7 +3,7 @@ $color_fon:  #264d8f;
 
 @mixin undrLine {
     width: 100px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 40px auto;
     background-color: $color_fon;
     border: 2px solid $color_fon;
   }
@@ -104,7 +104,6 @@ $color_fon:  #264d8f;
         width: 70%;
         margin: 0 auto ;
         .col {
-            margin-bottom: 50px;
             .name {
                 width: 100%;  
             }
@@ -160,6 +159,7 @@ $color_fon:  #264d8f;
         margin: 0 auto 20px auto;
         justify-content: space-around;
         .main_item {
+            margin-bottom: 0;
            .underline_sert {
             @include undrLine
            } 
