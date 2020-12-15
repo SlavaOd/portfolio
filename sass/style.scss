@@ -145,7 +145,11 @@ $color_fon:  #264d8f;
                     left: 20%;
                     transition: 0.5s;
                     opacity:1;
-            }
+                }
+                &:first-child {
+                    background-image: url(../img/minimal.png);
+                    background-size: contain;
+                }
             }
             &:nth-child(n+2) {
                 height: 200px;

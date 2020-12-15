@@ -1,0 +1,35 @@
+.conteiner {
+    width: 100%;
+    background-color: #858484;
+}
+
+.header {
+    background-color: #264d8f;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main {
+    width: 500px;
+    height: 845px;
+    margin: 0 auto;
+    background-image: url(./img/site.png);
+}
+
+.code, .href {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    text-transform: none;
+    font-size: 24px;
+}
+
+.href:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.code:hover {
+    text-decoration: none;
+    color: #000000;
+}
