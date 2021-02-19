@@ -118,7 +118,7 @@ $color_fon:  #264d8f;
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
-                background-image: url(../img/object-oriented-programming-in-python.png);
+               
                 .site_name {
                     background-color: $color_fon;
                     width: 100%;
@@ -146,10 +146,26 @@ $color_fon:  #264d8f;
                     transition: 0.5s;
                     opacity:1;
                 }
-                &:first-child {
-                    background-image: url(../img/minimal.png);
-                    background-size: contain;
+                .restart_logo {
+                    color: #ffffff;
+                    font-size: 50px;
+                    width: 160px;
+                    height: 80px;
+                    margin: 30px auto 0 auto;
+                    border-radius: 20px;
+                    background-color: blue;
+                    text-align: center;
                 }
+            }
+            .minimal {
+                background-image: url(../img/minimal.png);
+                background-size: contain;
+            }
+            .calc {
+                background-color: #000000;
+            }
+            .daisy {
+                background-image: url(../img/object-oriented-programming-in-python.png);
             }
             &:nth-child(n+2) {
                 height: 200px;
